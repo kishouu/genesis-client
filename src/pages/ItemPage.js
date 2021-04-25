@@ -63,14 +63,30 @@ function ItemPage() {
 
             <ItemRequirements>
                 <h2>System Requirements:</h2> <br/>
-                <b>OS:</b> {item.requirements.OS} <br/>
-                <b>Processor:</b> {item.requirements.Processor} <br/>
-                <b>Memory:</b> {item.requirements.Memory} <br/>
-                <b>Graphics:</b> {item.requirements.Graphics} <br/>
-                <b>DirectX:</b> {item.requirements.DirectX} <br/>
-                <b>Network:</b> {item.requirements.Network} <br/>
-                <b>Storage:</b> {item.requirements.Storage} <br/>
-                <b>AdditionalNotes:</b> {item.requirements.AdditionalNotes} <br/>
+                <RequirementsContainer>
+                    <div>
+                        <h3>Minimum:</h3> <br />
+                        <b>OS:</b> {item.requirements.minimum.OS} <br/>
+                        <b>Processor:</b> {item.requirements.minimum.Processor} <br/>
+                        <b>Memory:</b> {item.requirements.minimum.Memory} <br/>
+                        <b>Graphics:</b> {item.requirements.minimum.Graphics} <br/>
+                        <b>DirectX:</b> {item.requirements.minimum.DirectX} <br/>
+                        <b>Network:</b> {item.requirements.minimum.Network} <br/>
+                        <b>Storage:</b> {item.requirements.minimum.Storage} <br/>
+                        <b>AdditionalNotes:</b> {item.requirements.minimum.AdditionalNotes} <br/>
+                    </div>
+                    <div>
+                        <h3>Recommended:</h3> <br />
+                        <b>OS:</b> {item.requirements.recommended.OS} <br/>
+                        <b>Processor:</b> {item.requirements.recommended.Processor} <br/>
+                        <b>Memory:</b> {item.requirements.recommended.Memory} <br/>
+                        <b>Graphics:</b> {item.requirements.recommended.Graphics} <br/>
+                        <b>DirectX:</b> {item.requirements.recommended.DirectX} <br/>
+                        <b>Network:</b> {item.requirements.recommended.Network} <br/>
+                        <b>Storage:</b> {item.requirements.recommended.Storage} <br/>
+                        <b>AdditionalNotes:</b> {item.requirements.recommended.AdditionalNotes} <br/>
+                    </div>
+                </RequirementsContainer>
 
             </ItemRequirements>
         </ItemPageContainer>
@@ -107,19 +123,36 @@ const ItemDescription = styled.div`
     width: 30rem;
     padding: 1rem 0px 1rem 0px
 `
+
+
 const ItemPrice = styled.div`
     color: #00000;
     padding: 4px;
     margin-right: 1rem;
     border-radius: 5px;
 `
+const RequirementsContainer = styled.div`
+    display:flex;
+    div {
+        width: 32rem;
+        margin-right: 3rem;
+    }
+`
+
+
 const ItemRequirements = styled.div`
-    width: 25rem;
-    margin: 3rem 0px 10rem 10rem;
+    
+    margin: 3rem 0px 10rem 9rem;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
         margin-left: -3rem
+
     }
+
+
 `
 const ItemAddCartBTN = styled.button`
     color: #B6F981;

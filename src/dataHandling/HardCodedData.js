@@ -4,7 +4,7 @@ export const itemData = [
         name: 'Dark Souls III',
         id: 1,
         requirements: {
-            minimun: {
+            minimum: {
                 OS: 'Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit',
                 Processor: 'Intel Core i3-2100 / AMD® FX-6300',
                 Memory: '4 GB RAM',
@@ -34,14 +34,26 @@ export const itemData = [
         name: 'Omori',
         id: 2,
         requirements: {
-            OS: 'Microsoft Windows 8.1 (32bit/64bit)',
-            Processor: 'Intel N4100 (or similar) or better',
-            Memory: '4 GB RAM',
-            Graphics: ' DirectX 9/OpenGL 4.1 capable GPU',
-            DirectX: 'Version 9.0c',
-            Network: 'Broadband Internet connection',
-            Storage: '2 GB available space',
-            AdditionalNotes: '1280x720 display is recommended at x2 resolution but is not required'
+            minimum: {
+                OS: 'Microsoft Windows 8.1 (32bit/64bit)',
+                Processor: 'Intel N4100 (or similar) or better',
+                Memory: '4 GB RAM',
+                Graphics: ' DirectX 9/OpenGL 4.1 capable GPU',
+                DirectX: 'Version 9.0c',
+                Network: 'Broadband Internet connection',
+                Storage: '2 GB available space',
+                AdditionalNotes: '1280x720 display is recommended at x2 resolution but is not required'
+            },
+            recommended: {
+                OS: 'Microsoft Windows 10 (32bit/64bit)',
+                Processor: 'Intel Core i3-6100 or better',
+                Memory: '8 GB RAM',
+                Graphics: 'OpenGL ES 2.0 hardware driver support required for WebGL acceleration',
+                DirectX: 'Version 9',
+                Network: 'Broadband Internet connection',
+                Storage: '2 GB available space',
+                AdditionalNotes: '1280x720 display is recommended at x2 resolution but is not required'
+            }
         },
         description: 'Explore a strange world full of colorful friends and foes. When the time comes, the path you’ve chosen will determine your fate... and perhaps the fate of others as well.',
         img: 'https://cdn.akamai.steamstatic.com/steam/apps/1150690/capsule_616x353.jpg?t=1618373247',
