@@ -97,7 +97,7 @@ const ItemImage = styled.div`
     height: 20rem;
     margin: 0px 10px 0px 3rem;
     filter: drop-shadow(0px 10px 15px #3333);
-    
+    border-radius: 10px
 `
 const ItemName = styled.h1`
 

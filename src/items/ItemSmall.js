@@ -89,7 +89,7 @@ const ItemSmallContainer = styled.div`
     justify-content: flex-end;
     align-items: center;
     padding 2rem;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     background-size: cover;
     flex-direction: column;
     filter: drop-shadow(0px 10px 15px #3333);

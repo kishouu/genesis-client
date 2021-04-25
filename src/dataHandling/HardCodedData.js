@@ -4,14 +4,27 @@ export const itemData = [
         name: 'Dark Souls III',
         id: 1,
         requirements: {
-            OS: 'Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit',
-            Processor: 'Intel Core i3-2100 / AMD® FX-6300',
-            Memory: '4 GB RAM',
-            Graphics: 'NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950',
-            DirectX: 'Version 11',
-            Network: 'Broadband Internet connection',
-            Storage: '25 GB available space',
-            AdditionalNotes: 'Internet connection required for online play and product activation'
+            minimun: {
+                OS: 'Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit',
+                Processor: 'Intel Core i3-2100 / AMD® FX-6300',
+                Memory: '4 GB RAM',
+                Graphics: 'NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950',
+                DirectX: 'Version 11',
+                Network: 'Broadband Internet connection',
+                Storage: '25 GB available space',
+                AdditionalNotes: 'Internet connection required for online play and product activation'
+            },
+            recommended: {
+                OS: 'Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit',
+                Processor: 'Intel Core i7-3770 / AMD® FX-8350',
+                Memory: '8 GB RAM',
+                Graphics: 'NVIDIA® GeForce GTX 970 / ATI Radeon R9 series',
+                DirectX: 'Version 11',
+                Network: 'Broadband Internet connection',
+                Storage: '25 GB available space',
+                AdditionalNotes: 'Internet connection required for online play and product activation'
+            }
+
         },
         description: 'Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!',
         img: 'https://www.wallpaperup.com/uploads/wallpapers/2015/09/14/802840/bdbe78433f9386224f1038647153d339.jpg',
