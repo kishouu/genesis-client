@@ -23,6 +23,10 @@ function Header() {
                     Home
                 </Link>
 
+                <Link to="/community">
+                    Community
+                </Link>
+
                 <Link to="/cart">
                     <CartBTN>
                     Cart <ShoppingCartIcon /> ({cart.length})
