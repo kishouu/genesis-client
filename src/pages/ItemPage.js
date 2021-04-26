@@ -1,6 +1,6 @@
 import  styled  from 'styled-components';
 import React from 'react'
-import {itemData}  from '../dataHandling/HardCodedData'
+import { itemData }  from '../dataHandling/HardCodedData'
 import { useStateValue } from '../dataHandling/StateProvider';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
@@ -8,7 +8,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
-const item = itemData[id - 1]
+const item =  itemData[id - 1] 
 
 function ItemPage() {
 
@@ -31,8 +31,8 @@ function ItemPage() {
     
 
     const img_style = {
-        background: `url(${item.img}) center no-repeat`,
-        backgroundSize: 'cover'
+            background: `url(${item.img}) center no-repeat`,
+            backgroundSize: 'cover'
         }
 
     

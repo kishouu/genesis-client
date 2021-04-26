@@ -3,8 +3,6 @@ import React from 'react'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from '../dataHandling/StateProvider';
 
-
-
 function ItemSmall(props) {
 
     const container_img_style = {
@@ -13,8 +11,6 @@ function ItemSmall(props) {
         }
 
     const [ {}, dispatch ] = useStateValue()
-
-    // console.log("this is the cart >>>>", cart)
 
     const addCart = (e) => {
         e.preventDefault();
@@ -30,32 +26,13 @@ function ItemSmall(props) {
         })
         console.log(` ${props.name} added to cart`);
         }
-    
-    // const pushItemData = (e) => {
-    //     e.preventDefault();
-    //     dispatch({
-    //         type: 'GO_ITEM_PAGE',
-    //         item: {
-    //             name: props.name,
-    //             id: props.id,
-    //             image: props.image,
-    //             price: props.price
-    //         }
-    //     })
-    //     console.log(` ${props.name} added to page`);
-    //     console.log("this is the item >>>>", itemDetails)
-    // }
 
     return(
         <ItemSmallContainer style={container_img_style}  >
 
-
                 <a href={`/prod/${props.name}?id=${props.id}`} >
                     <ItemSpace />
                 </a>
-
-
-
 
                 <ItemDetails>
                     <ItemSmallPrice>
@@ -65,6 +42,7 @@ function ItemSmall(props) {
                         <b>Add</b> <ShoppingCartIcon />
                     </ItemSmallAddCartBTN>
                 </ItemDetails>
+                
             </ItemSmallContainer>
     )
 }

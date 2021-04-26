@@ -79,13 +79,3 @@ const CartBTN = styled.div`
     justify-content:center;
     align-items:center;
 `
-
-//const HeaderNavHome = styled.div``
-//const HeaderNavCart = styled.div``
-//const HeaderNavLogin = styled.div``
-//const HeaderNavSignup = styled.div``
-
-//<HeaderNavHome>Home</HeaderNavHome>
-//<HeaderNavCart>Cart</HeaderNavCart>
-//<HeaderNavSignup>SignUp</HeaderNavSignup>
-//<HeaderNavLogin>Login </HeaderNavLogin>

@@ -1,47 +1,39 @@
+import  Slider  from 'infinite-react-carousel'
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import { itemData } from '../dataHandling/HardCodedData.js'
+import CarouselItems from '../items/CarouselItems.js'
 import ItemSmall from '../items/ItemSmall.js'
 
 function Home() {
 
     const [smallItems] = useState(itemData)
-    // [
-    //     {
-    //         name: 'Dark Souls III',
-    //         id: 1,
-    //         img: 'https://www.wallpaperup.com/uploads/wallpapers/2015/09/14/802840/bdbe78433f9386224f1038647153d339.jpg',
-    //         price: 2000
-    //     },
-    //     {
-    //         name: 'Omori',
-    //         id: 2,
-    //         img: 'https://cdn.akamai.steamstatic.com/steam/apps/1150690/capsule_616x353.jpg?t=1618373247',
-    //         price: 389
-    //     }
-    // ]
-
-
-
 
     return (
         <HomeContainer>
 
-
+                <h2>Popular</h2>
                 <SmallItemsContainer>
                     {smallItems.map((itm) => (
-
-
-                            <ItemSmall name={itm.name} id={itm.id} image={itm.img} price={itm.price} />
-
-
-                        ))}
+                        <ItemSmall name={itm.name} id={itm.id} image={itm.img} price={itm.price} />
+                    ))}
                 </SmallItemsContainer>
 
+                <h2>Party Games</h2>
+                <CarouselCont>
+                    <Slider dots style={{height: '35rem'}}>
+                        {smallItems.map((itm) => (
+                            <CarouselItems name={itm.name} id={itm.id} img={itm.img} price={itm.price} />
+                        ))}
+                    </Slider>
+                </CarouselCont>
 
-
-
-
+                <h2>Recommend</h2>
+                <SmallItemsContainer>
+                    {smallItems.map((itm) => (
+                        <ItemSmall name={itm.name} id={itm.id} image={itm.img} price={itm.price} />
+                    ))}
+                </SmallItemsContainer>
 
         </HomeContainer>
     )
@@ -50,8 +42,15 @@ function Home() {
 export default Home
 
 const HomeContainer = styled.div`
-
+    h2 {
+        margin: 4rem 0rem 0rem 5rem; 
+    }
 `
+
 const SmallItemsContainer = styled.div`
-    display: flex
+    display: flex;
+`
+const CarouselCont = styled.div`
+    margin-top: 2rem
+
 `
