@@ -13,7 +13,7 @@ function About() {
                 <AboutPadIMG />
                 <div>
                     <p>
-                    As the one leading software store in the world genesis can provide you a good service for free you can access all games with our Genesis premium you can have a discount for your first avail. We believe that all customer deserve a good service  try it now!
+                    At Genesis Software Company, we develop innovative software that offers products and services. Our mission is to give you a professional online service that will generally make your shopping and gaming experience at ease.
                     <h2>-Genesis</h2>
                     </p>
                 </div>
