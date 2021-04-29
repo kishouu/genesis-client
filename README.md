@@ -1,3 +1,7 @@
+# THis is a project for school (2021-04-29)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
