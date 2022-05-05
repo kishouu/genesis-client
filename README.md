@@ -7,13 +7,13 @@
 
 
 ### HOME
-![HOME](readme.img/home.png)
+<img src="readme.img/home.png" width="480" >
 
 ### CAROUSEL
 ![carousel](https://user-images.githubusercontent.com/72649909/166919272-04a4003a-6d83-4c47-958f-e8ff93a48d89.gif)
 
 ### CART
-![CART](readme.img/cart.png)
+<img src="readme.img/cart.png" width="480" >
 
 ### ABOUT
 ![about](https://user-images.githubusercontent.com/72649909/166919329-30074ab6-3847-4b28-b799-542a2768df4f.gif)
